@@ -47,6 +47,7 @@ async def aio_get_m3u8_video(m3u8_urls_list, m3u8_url_http):
 
 
 async def get_m3u8_video(m3u8_url_http, m3u8_url_data):
+    # Some request timeouts were not known, so try-except was used for the time being. If you know, welcome to answer.    
     try:
         timeout = aiohttp.ClientTimeout(total=300)
         name = m3u8_url_data.split(".")[0]
