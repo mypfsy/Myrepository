@@ -1,2 +1,2 @@
 # Myrepository
-This is a trash can.
+This is a trash can！
